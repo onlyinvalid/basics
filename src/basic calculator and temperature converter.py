@@ -39,6 +39,8 @@ while mode not in (1,2):
 #calculator
 if mode == 1:
    
+    print("This is the calculator")
+
     op1 = None
 
     while op1 not in("+","-","*","/"):
@@ -67,12 +69,25 @@ if mode == 1:
 
 
     if op1 == "+":
-        None
+        val = num1 + num2
+    elif op1 == "-":
+        val = num1 - num2
+    elif op1 == "*":
+        val = num1 * num2
+    elif op1 == "/":
+        val = num1 / num2
+    else:
+        print("something went wrong in choosing the operator")
+
+    print(num1, op1, num2, "=", val)
        
 
 #temperature conversion   
 elif mode == 2:
-   None
+   
+   print("This is the temperature converter")
+
+   
    
 
 
