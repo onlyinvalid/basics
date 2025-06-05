@@ -43,6 +43,7 @@ if mode == 1:
 
     op1 = None
 
+    #loop to prevent wrong input of operator
     while op1 not in("+","-","*","/"):
         op1 = input("What operation do you want to use? (+,-,*,/)\n:")
 
@@ -52,6 +53,7 @@ if mode == 1:
 
     num1 = 0
 
+    #loopa to prevent wrong input of number
     while num1 == 0:
         try:
             num1 = float(input("What is the first number\n:"))
@@ -85,10 +87,39 @@ if mode == 1:
 #temperature conversion   
 elif mode == 2:
    
-   print("This is the temperature converter")
+   #celcius, fahrenheit, kelvin, rankine
+   #c to f
+   #f to c
+   #c to k
+   #k to c
+   #c to r
+   #r to c
+   #f to k
+   #k to f
+   #f to r
+   #r to f
+   #k to r
+   #r to k
 
-   
-   
+   unit_map = {
+       "1": "celcius",
+       "2": "fahrenheit",
+       "3": "kelvin",
+       "4": "rankine"
+   }
+
+   def c_to_f(c): return (c * (9/5)) + 32
+   def f_to_c(f): return (5/9)*(f-32)
+   def c_to_k(c): return c + 273.15
+   def k_to_c(k): return k - 273.15
+   def c_to_r(c): return (c * (9/5)) + 491.67
+   def r_to_c(r): return ()
+   print("This is the temperature converter")
+   conv = input("Which conversion would you like to use?\n" \
+   "1: ")
+
+
+
 
 
 
