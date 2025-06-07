@@ -265,9 +265,8 @@ while True:
         
     ex = input("\nIf you want to exit the application type 'exit' \n" \
     "or else just hit enter.\n")
-    exit= []
-    exit.append(ex)
-    if "exit" in exit:
+
+    if ex == "exit":
         break
 
 
